@@ -1,0 +1,32 @@
+{
+  "name": "whatsapp-status",
+  "version": "1.0.0",
+  "description": "Track WhatsApp Messages using nodejs and Twilio api for whatsapp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdelalielbahloul/Track-WhatsApp-Message-Status.git"
+  },
+  "keywords": [
+    "nodejs",
+    "twilio",
+    "express",
+    "whatsapp"
+  ],
+  "author": "EL BAHLOUL ABDELALI",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abdelalielbahloul/Track-WhatsApp-Message-Status/issues"
+  },
+  "homepage": "https://github.com/abdelalielbahloul/Track-WhatsApp-Message-Status#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.11"
+  }
+}
