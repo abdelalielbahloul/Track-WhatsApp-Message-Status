@@ -31,8 +31,11 @@ const messageController = (req, res) => {
        whatsAppBody: response.data.body,
        whatsAppStatus: response.data.status
      };
+
+     console.log(messageResponse);
+     
      new Message(messageResponse).save();
-     res.status(200).send("Message sent successfully");
+     res.status(200).send(messageResponse);
    })
    .catch(error => {
      res
@@ -46,7 +49,7 @@ const messageStatus = async (req, res) => {
  if (!message) {
    res.send("Invalid message ID!");
  } else {
-   await Message.findOneAndUpdate(
+   await Message.findOne(
      {
        msid: req.body.MessageSid
      },
